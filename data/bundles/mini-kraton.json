@@ -1,0 +1,48 @@
+{
+  "bundle_slug": "mini-kraton-hr-upgrade-bundle",
+  "bundle_name": "Mini Kraton HR Upgrade Bundle",
+  "vehicle_name": "Arrma 1/16 Mini Kraton",
+  "headline": "Mini Kraton. Maximum Mayhem.",
+  "subheadline": "A hand-picked HR upgrade bundle built to toughen it up and keep the fun going.",
+  "parts": [
+    {
+      "name": "Blue CNC T6 Chassis Bash Bar",
+      "brand": "Hot Racing",
+      "role": "durability",
+      "url": "https://store.hobbyetc.com/parts/view/REPLACE-WITH-REAL-URL"
+    },
+    {
+      "name": "Aluminum Damper Shock 63MM (2)",
+      "brand": "Hot Racing",
+      "role": "handling",
+      "url": "https://store.hobbyetc.com/parts/view/REPLACE-WITH-REAL-URL"
+    },
+    {
+      "name": "CNC Steel Diff Outdrive",
+      "brand": "Hot Racing",
+      "role": "drivetrain strength",
+      "url": "https://store.hobbyetc.com/parts/view/REPLACE-WITH-REAL-URL"
+    },
+    {
+      "name": "Aluminum Front Knuckle Spindle",
+      "brand": "Hot Racing",
+      "role": "front-end durability",
+      "url": "https://store.hobbyetc.com/parts/view/REPLACE-WITH-REAL-URL"
+    }
+  ],
+  "offer": {
+    "type": "loyalty",
+    "label": "Pit Pass Cash eligible",
+    "note": "Earn rewards on your build without discounting the bundle."
+  },
+  "content_assets": {
+    "blog_post": true,
+    "landing_page": true,
+    "meta_description": true,
+    "internal_links": true
+  },
+  "influencer": {
+    "name": "Roadside RC",
+    "content_angle": "install, test, does it make the cut"
+  }
+}
