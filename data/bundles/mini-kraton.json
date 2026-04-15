@@ -44,5 +44,11 @@
   "influencer": {
     "name": "Roadside RC",
     "content_angle": "install, test, does it make the cut"
+  },
+  "video": {
+    "title": "Mini Kraton HR Upgrade Bundle Test",
+    "youtube_url": "https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID",
+    "embed_url": "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID",
+    "thumbnail_url": "https://img.youtube.com/vi/REPLACE_WITH_VIDEO_ID/hqdefault.jpg"
   }
 }

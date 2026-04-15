@@ -1,0 +1,55 @@
+<section class="content-hero">
+  <h1>{{ headline }}</h1>
+  <p class="content-subhead">{{ subheadline }}</p>
+  <p class="content-value-prop"><strong>{{ value_prop }}</strong></p>
+  <div class="content-hero-cta">
+    <a href="{{ bundle_url }}">Shop the full bundle</a>
+  </div>
+</section>
+
+<section class="content-utility-bar">
+  <div><strong>Vehicle:</strong> {{ vehicle_name }}</div>
+  <div><strong>Upgrades:</strong> {{ part_count }}</div>
+  <div><strong>Rewards:</strong> {{ offer_label }}</div>
+  <div><strong>Creator:</strong> {{ influencer_name }}</div>
+</section>
+
+<section class="content-video">
+  <h2>Video Proof</h2>
+  <p>{{ video_intro }}</p>
+  {{ video_embed_or_placeholder }}
+</section>
+
+<section class="content-parts">
+  <h2>What’s in the Bundle</h2>
+  {{ parts_list_html }}
+</section>
+
+<section class="content-why">
+  <h2>Why We Built It This Way</h2>
+  <p>{{ why_intro }}</p>
+  <ul>
+    <li>{{ benefit_1 }}</li>
+    <li>{{ benefit_2 }}</li>
+    <li>{{ benefit_3 }}</li>
+    <li>{{ benefit_4 }}</li>
+  </ul>
+</section>
+
+<section class="content-creator-angle">
+  <h2>Real Content, Not Just Catalog Copy</h2>
+  <p>We’re pairing this build with content from <strong>{{ influencer_name }}</strong> focused on <strong>{{ influencer_angle }}</strong>.</p>
+  <p>{{ creator_supporting_copy }}</p>
+</section>
+
+<section class="content-parts-finder-cta">
+  <h2>Find the Right Parts</h2>
+  <p>{{ parts_finder_intro }}</p>
+  <a href="{{ parts_finder_url }}">Use the parts finder</a>
+</section>
+
+<section class="content-final-cta">
+  <a href="{{ bundle_url }}">Shop the full bundle</a>
+  <a href="{{ parts_page_url }}">Explore the individual parts</a>
+  <a href="{{ parts_finder_url }}">See what fits your vehicle</a>
+</section>

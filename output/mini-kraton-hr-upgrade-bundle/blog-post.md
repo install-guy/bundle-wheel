@@ -1,10 +1,21 @@
-# Mini Kraton. Maximum Mayhem. Upgrades That Actually Make Sense
+# Mini Kraton. Maximum Mayhem.
 
-If you run an Arrma 1/16 Mini Kraton, you already know how quickly a fun platform can turn into a list of parts you probably ought to upgrade next.
+A hand-picked HR upgrade bundle built to toughen it up and keep the fun going.
 
-That’s where [this bundle](https://store.hobbyetc.com/bundles/mini-kraton-hr-upgrade-bundle) comes in.
+**Built to fix the stuff that actually breaks first.**
 
-Instead of tossing together random upgrades, this setup focuses on parts that help support real-world driving, durability, and repeat use. The goal is simple: make the vehicle stronger, more capable, and more satisfying to run.
+## Quick Look
+
+- **Vehicle:** Arrma 1/16 Mini Kraton
+- **Included Upgrades:** 4
+- **Rewards:** Pit Pass Cash eligible
+- **Creator:** Roadside RC
+
+## Video Proof
+
+Real install. Real test. Real feedback.
+
+<div class="video-embed-wrapper"><iframe src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID" title="Mini Kraton HR Upgrade Bundle Test" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 ## What’s in the Bundle
 
@@ -15,27 +26,26 @@ Instead of tossing together random upgrades, this setup focuses on parts that he
 
 ## Why We Built It This Way
 
-A good upgrade bundle should do more than look nice on a product page. It should answer a real question:
+A good upgrade bundle should do more than look good on paper. It should help answer where to start and what actually makes a difference.
 
-**If I’m going to upgrade this rig, where should I start?**
-
-This bundle gives a solid answer by combining parts that help it:
-- take hits better
-- stay tighter
-- keep power where it belongs
-- hold up run after run
+- Take hits better
+- Stay tighter
+- Keep power where it belongs
+- Hold up run after run
 
 ## Real Content, Not Just Catalog Copy
 
-We’re also putting this bundle in the hands of **Roadside RC** so people can see what it looks like in actual use.
+We’re pairing this build with content from **Roadside RC** focused on:
+
+**install, test, does it make the cut**
 
 That means installs, testing, and honest impressions instead of polished nonsense.
 
-## The Bigger Idea
+## Find the Right Parts
 
-This isn’t just about one bundle. It’s about helping hobbyists make smarter upgrade decisions without digging through endless listings and second-guessing every part.
+Start with your vehicle and we’ll help you find what actually fits.
 
-If this build style fits what you’re after, start with [the full bundle](https://store.hobbyetc.com/bundles/mini-kraton-hr-upgrade-bundle), dig through [the individual parts](https://store.hobbyetc.com/parts), and use [the parts finder](https://store.hobbyetc.com/vehicles) to keep the build going.
+- [Use the parts finder](https://store.hobbyetc.com/vehicles)
 
 ## Next Steps
 
