@@ -10,25 +10,54 @@
       "name": "Brass Front Steering Block SCX30",
       "brand": "Hot Racing",
       "role": "front-end weight",
-      "url": "https://store.hobbyetc.com/parts/view/190378"
+      "url": "https://store.hobbyetc.com/parts/view/190378",
+      "image_urls": [
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hpoz.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hegvdcngzauuw.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hegvdcngza.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hegv.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hegvdcn.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hzkhisd.jpg?_a=BAMAOGGo0"
+      ]
     },
     {
       "name": "Brass TT Steering Fix Links SCX30",
       "brand": "Hot Racing",
       "role": "steering precision",
-      "url": "https://store.hobbyetc.com/parts/view/190393"
+      "url": "https://store.hobbyetc.com/parts/view/190393",
+      "image_urls": [
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoe.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoerwfhegteafoypfq.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoerwfhegteafoy.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoerwfhegtea.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoerwfheg.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoerwf.jpg?_a=BAMAOGGo0"
+      ]
     },
     {
       "name": "3.3g Brass Wheel Weights SCX30",
       "brand": "Hot Racing",
       "role": "low-down weight",
-      "url": "https://store.hobbyetc.com/parts/view/190399"
+      "url": "https://store.hobbyetc.com/parts/view/190399",
+      "image_urls": [
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty155hkqq.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty155hkug.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty155hkugwbm.jpg?_a=BAMAOGGo0"
+      ]
     },
     {
       "name": "No Flex Brass Link Set SCX30",
       "brand": "Hot Racing",
       "role": "chassis stability",
-      "url": "https://store.hobbyetc.com/parts/view/190402"
+      "url": "https://store.hobbyetc.com/parts/view/190402",
+      "image_urls": [
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hgkb.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hlidhsectbzwl.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hymyqwa.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hymyqwavoa.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hymy.jpg?_a=BAMAOGGo0",
+        "https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hmlb.jpg?_a=BAMAOGGo0"
+      ]
     }
   ],
   "offer": {
