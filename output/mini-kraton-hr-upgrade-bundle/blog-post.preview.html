@@ -262,6 +262,56 @@
       color: var(--he-blue);
     }
 
+    .parts-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .part-card {
+      border: 1px solid var(--he-border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .part-card-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #eef2ff;
+      border-bottom: 1px solid var(--he-border);
+    }
+
+    .part-card-body {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .part-card-title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    .part-card-role {
+      margin: 0;
+      color: var(--he-muted);
+      font-size: 14px;
+    }
+
+    .part-card-link {
+      margin-top: auto;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
     .content-parts-finder-cta {
       background: linear-gradient(180deg, #fff 0%, #f7f9ff 100%);
     }
@@ -322,6 +372,10 @@
       .content-hero h1 {
         font-size: 34px;
       }
+
+      .parts-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 640px) {
@@ -360,6 +414,10 @@
         padding-left: 18px;
         padding-right: 18px;
       }
+
+      .parts-card-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -380,6 +438,7 @@
   <h1>Mini Kraton. Maximum Mayhem.</h1>
   <p class="content-subhead">A hand-picked HR upgrade bundle built to toughen it up and keep the fun going.</p>
   <p class="content-value-prop"><strong>Built to fix the stuff that actually breaks first.</strong></p>
+  
   <div class="content-hero-cta">
     <a href="https://store.hobbyetc.com/bundles/mini-kraton-hr-upgrade-bundle">Shop the full bundle</a>
   </div>
@@ -389,7 +448,7 @@
   <div><strong>Vehicle:</strong> Arrma 1/16 Mini Kraton</div>
   <div><strong>Upgrades:</strong> 4</div>
   <div><strong>Rewards:</strong> Pit Pass Cash eligible</div>
-  <div><strong>Creator:</strong> Roadside RC</div>
+  <div><strong>Theme:</strong> Basher</div>
 </section>
 
 <section class="content-video">
@@ -410,12 +469,12 @@
 
 <section class="content-why">
   <h2>Why We Built It This Way</h2>
-  <p>A good upgrade bundle should do more than look good on paper. It should help answer where to start and what actually makes a difference.</p>
+  <p>A good bash bundle should toughen up weak points and keep the rig running hard.</p>
   <ul>
-    <li>Take hits better</li>
-    <li>Stay tighter</li>
-    <li>Keep power where it belongs</li>
-    <li>Hold up run after run</li>
+    <li>Toughens up common weak points</li>
+    <li>Helps handle hard hits and bad landings</li>
+    <li>Keeps the rig tighter run after run</li>
+    <li>Built for bashing and going back for more</li>
   </ul>
 </section>
 
@@ -436,6 +495,7 @@
   <a href="https://store.hobbyetc.com/parts">Explore the individual parts</a>
   <a href="https://store.hobbyetc.com/vehicles">See what fits your vehicle</a>
 </section>
+
     </main>
   </div>
 
