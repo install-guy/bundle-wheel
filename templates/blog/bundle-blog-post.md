@@ -9,7 +9,7 @@
 - **Vehicle:** {{ vehicle_name }}
 - **Included Upgrades:** {{ part_count }}
 - **Rewards:** {{ offer_label }}
-- **Creator:** {{ influencer_name }}
+- **Theme:** {{ theme }}
 
 ## Video Proof
 

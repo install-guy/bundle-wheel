@@ -2,14 +2,14 @@
 
 More planted. More precise. Built for better crawling control.
 
-**Built to fix the stuff that actually breaks first.**
+**Built to improve balance, control, and confidence on the crawl.**
 
 ## Quick Look
 
 - **Vehicle:** SCX30
 - **Included Upgrades:** 4
 - **Rewards:** Pit Pass Cash eligible
-- **Creator:** Hobby Etc
+- **Theme:** Crawler
 
 ## Video Proof
 
@@ -26,12 +26,12 @@ Real install. Real test. Real feedback.
 
 ## Why We Built It This Way
 
-A good upgrade bundle should do more than look good on paper. It should help answer where to start and what actually makes a difference.
+Crawling is about control. This bundle adds weight and stiffness where it matters so the rig feels more planted and predictable.
 
-- Take hits better
-- Stay tighter
-- Keep power where it belongs
-- Hold up run after run
+- Adds low-down weight for a more planted crawl feel
+- Improves front-end bite and steering precision
+- Helps the rig stay settled on technical lines
+- Built for controlled crawling, not random upgrades
 
 ## Real Content, Not Just Catalog Copy
 
