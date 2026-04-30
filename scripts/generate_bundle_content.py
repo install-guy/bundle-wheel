@@ -13,12 +13,9 @@ BASE_URL = "https://store.hobbyetc.com"
 
 THEME_COPY = {
     "crawler": {
-        "value_prop": "Built to improve balance, control, and confidence on the crawl.",
+        "value_prop": "Built for brass-backed control, cleaner steering feel, and better crawl stability.",
         "video_intro": "Real setup. Real crawl feel. Real feedback.",
-        "why_intro": (
-            "Crawling is about control. This bundle adds weight and stiffness where it "
-            "matters so the rig feels more planted and predictable."
-        ),
+        "why_intro": "Crawling is about control and feel. This setup keeps weight low, steering consistent, and lines more predictable.",
         "benefits": [
             "Adds low-down weight for a more planted crawl feel",
             "Improves front-end bite and steering precision",
@@ -175,7 +172,7 @@ def build_parts_list_html(parts: list[dict]) -> str:
         role = part.get("role", "").strip()
         url = part.get("url", "").strip()
 
-        display_name = html_link(name, url) if url else escape(name)
+        display_name = escape(name)
 
         if role:
             lines.append(f"  <li><strong>{display_name}</strong> — {escape(role.capitalize())}</li>")
@@ -246,6 +243,7 @@ def build_blog_context(bundle: dict) -> dict:
         theme = "basher"
 
     theme_copy = THEME_COPY[theme]
+    theme_class = f"theme-{theme}"
 
     offer_label = bundle.get("offer", {}).get("label", "Pit Pass Cash eligible")
     influencer_name = bundle.get("influencer", {}).get("name", "our creator partner")
@@ -281,6 +279,7 @@ def build_blog_context(bundle: dict) -> dict:
         "value_prop": theme_copy["value_prop"],
         "vehicle_name": vehicle_name,
         "theme": theme.capitalize(),
+        "theme_class": theme_class,
         "part_count": str(len(parts)),
         "offer_label": offer_label,
         "influencer_name": influencer_name,

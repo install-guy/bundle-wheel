@@ -2,7 +2,7 @@
 
 More planted. More precise. Built for better crawling control.
 
-**Built to improve balance, control, and confidence on the crawl.**
+**Built for brass-backed control, cleaner steering feel, and better crawl stability.**
 
 ## Quick Look
 
@@ -24,7 +24,7 @@ More planted. More precise. Built for better crawling control.
 
 ## Why We Built It This Way
 
-Crawling is about control. This bundle adds weight and stiffness where it matters so the rig feels more planted and predictable.
+Crawling is about control and feel. This setup keeps weight low, steering consistent, and lines more predictable.
 
 - Adds low-down weight for a more planted crawl feel
 - Improves front-end bite and steering precision
