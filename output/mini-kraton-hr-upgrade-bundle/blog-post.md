@@ -9,7 +9,7 @@ A hand-picked HR upgrade bundle built to toughen it up and keep the fun going.
 - **Vehicle:** Arrma 1/16 Mini Kraton
 - **Included Upgrades:** 4
 - **Rewards:** Pit Pass Cash eligible
-- **Creator:** Roadside RC
+- **Theme:** Basher
 
 ## Video Proof
 
@@ -26,12 +26,12 @@ Real install. Real test. Real feedback.
 
 ## Why We Built It This Way
 
-A good upgrade bundle should do more than look good on paper. It should help answer where to start and what actually makes a difference.
+A good bash bundle should toughen up weak points and keep the rig running hard.
 
-- Take hits better
-- Stay tighter
-- Keep power where it belongs
-- Hold up run after run
+- Toughens up common weak points
+- Helps handle hard hits and bad landings
+- Keeps the rig tighter run after run
+- Built for bashing and going back for more
 
 ## Real Content, Not Just Catalog Copy
 
