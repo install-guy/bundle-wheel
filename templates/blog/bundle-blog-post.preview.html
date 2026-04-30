@@ -118,6 +118,12 @@
       color: #fff;
       border: none;
     }
+    body.theme-crawler .content-hero {
+      background:
+        radial-gradient(circle at 80% -10%, rgba(226,112,36,0.16), transparent 40%),
+        linear-gradient(145deg, #11151d 0%, #1a212c 52%, #253143 100%);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
 
     .content-hero h1 {
       margin: 0 0 10px;
@@ -267,12 +273,20 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
 }
+body.theme-crawler .parts-card-grid {
+  counter-reset: part-number;
+}
 
 .part-card {
   border: 1px solid var(--he-border);
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
+}
+body.theme-crawler .part-card {
+  background: #161c25;
+  border-color: #313f56;
+  color: #e9eef8;
 }
 
 .part-card-details {
@@ -305,6 +319,27 @@
   gap: 8px;
   flex: 1;
 }
+body.theme-crawler .part-card-body {
+  position: relative;
+  padding-top: 18px;
+}
+body.theme-crawler .part-card-body::before {
+  counter-increment: part-number;
+  content: counter(part-number);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #e27024;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .part-card-title {
   margin: 0;
@@ -317,10 +352,16 @@
   color: var(--he-muted);
   font-size: 14px;
 }
+body.theme-crawler .part-card-role {
+  color: #b8c4da;
+}
 
 .part-card-expanded {
   padding: 0 12px 12px;
   font-size: 14px;
+}
+body.theme-crawler .part-card-expanded {
+  color: #d7dfef;
 }
 
 .part-card-expanded p {
@@ -344,6 +385,36 @@
   color: var(--he-blue);
   font-size: 12px;
   font-weight: 700;
+}
+body.theme-crawler .part-card-summary::after {
+  color: #8db1ff;
+}
+body.theme-crawler .content-why h2 {
+  color: #172f63;
+}
+body.theme-crawler .content-why {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f4fb 100%);
+}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.benefit-card {
+  border: 1px solid #ccd6eb;
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px;
+}
+.benefit-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  color: #152947;
+}
+.benefit-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #41536e;
 }
 
 .part-card-details[open] .part-card-summary::after {
@@ -458,7 +529,7 @@
     }
   </style>
 </head>
-<body>
+<body class="{{ theme_class }}">
   <div class="topbar">Preview mockup for internal review only</div>
 
   <header class="site-header">
