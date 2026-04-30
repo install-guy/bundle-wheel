@@ -13,7 +13,7 @@ More planted. More precise. Built for better crawling control.
 
 ## Video Proof
 
-Real install. Real test. Real feedback.
+Real setup. Real crawl feel. Real feedback.
 
 <div class="video-placeholder">Video embed goes here</div>
 
