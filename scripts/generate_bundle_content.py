@@ -9,9 +9,12 @@ BUNDLES_DIR = BASE_DIR / "data" / "bundles"
 OUTPUT_DIR = BASE_DIR / "output"
 TEMPLATES_DIR = BASE_DIR / "templates"
 BASE_URL = "https://store.hobbyetc.com"
+
+
 THEME_COPY = {
     "crawler": {
         "value_prop": "Built to improve balance, control, and confidence on the crawl.",
+        "video_intro": "Real setup. Real crawl feel. Real feedback.",
         "why_intro": (
             "Crawling is about control. This bundle adds weight and stiffness where it "
             "matters so the rig feels more planted and predictable."
@@ -25,6 +28,7 @@ THEME_COPY = {
     },
     "basher": {
         "value_prop": "Built to fix the stuff that actually breaks first.",
+        "video_intro": "Real install. Real test. Real feedback.",
         "why_intro": (
             "A good bash bundle should toughen up weak points and keep the rig running hard."
         ),
@@ -101,6 +105,52 @@ def build_parts_list_markdown(parts: list[dict]) -> str:
 
 
 def build_parts_list_html(parts: list[dict]) -> str:
+    has_images = any(part.get("image_urls") for part in parts)
+
+    if has_images:
+        cards = []
+
+        for part in parts:
+            name = part.get("name", "Unnamed Part")
+            role = part.get("role", "").strip()
+            url = part.get("url", "").strip() or "#"
+            image_urls = part.get("image_urls", [])
+            image = ""
+
+            if isinstance(image_urls, list):
+                image = next(
+                    (img.strip() for img in image_urls if isinstance(img, str) and img.strip()),
+                    ""
+                )
+
+            safe_name = escape(name)
+            safe_role = escape(role.capitalize()) if role else ""
+            safe_url = escape(url, quote=True)
+            safe_image = escape(image, quote=True)
+
+            if safe_image:
+                image_html = (
+                    f'<img class="part-card-image" src="{safe_image}" alt="{safe_name}">'
+                )
+            else:
+                image_html = '<div class="part-card-image part-card-image-placeholder">No image</div>'
+
+            card = f"""
+<div class="part-card">
+  {image_html}
+  <div class="part-card-body">
+    <h3 class="part-card-title">
+      <a href="{safe_url}">{safe_name}</a>
+    </h3>
+    <p class="part-card-role">{safe_role}</p>
+    <a class="part-card-link" href="{safe_url}">View part →</a>
+  </div>
+</div>
+"""
+            cards.append(card.strip())
+
+        return '<div class="parts-card-grid">\n' + "\n".join(cards) + "\n</div>"
+
     lines = ["<ul>"]
 
     for part in parts:
@@ -108,31 +158,12 @@ def build_parts_list_html(parts: list[dict]) -> str:
         role = part.get("role", "").strip()
         url = part.get("url", "").strip()
 
-        if url:
-            display_name = html_link(name, url)
-        else:
-            display_name = escape(name)
+        display_name = html_link(name, url) if url else escape(name)
 
-        image_urls = part.get("image_urls", [])
-        first_image = ""
-        if isinstance(image_urls, list):
-            first_image = next((url.strip() for url in image_urls if isinstance(url, str) and url.strip()), "")
-
-        text_block = f"<strong>{display_name}</strong>"
         if role:
-            text_block += f" — {escape(role.capitalize())}"
-
-        if first_image:
-            safe_image = escape(first_image, quote=True)
-            alt_text = escape(name)
-            lines.append(
-                "  <li>"
-                f'<img src="{safe_image}" alt="{alt_text}" width="72" height="72" '
-                'style="object-fit:cover;border-radius:8px;vertical-align:middle;margin-right:10px;">'
-                f"{text_block}</li>"
-            )
+            lines.append(f"  <li><strong>{display_name}</strong> — {escape(role.capitalize())}</li>")
         else:
-            lines.append(f"  <li>{text_block}</li>")
+            lines.append(f"  <li><strong>{display_name}</strong></li>")
 
     lines.append("</ul>")
     return "\n".join(lines)
@@ -192,9 +223,11 @@ def build_blog_context(bundle: dict) -> dict:
     subheadline = bundle.get("subheadline", "")
     parts = bundle.get("parts", [])
     video = bundle.get("video", {})
+
     theme = str(bundle.get("theme", "basher")).strip().lower() or "basher"
     if theme not in THEME_COPY:
         theme = "basher"
+
     theme_copy = THEME_COPY[theme]
 
     offer_label = bundle.get("offer", {}).get("label", "Pit Pass Cash eligible")
@@ -215,12 +248,14 @@ def build_blog_context(bundle: dict) -> dict:
 
     hero_image_url = str(bundle.get("hero_image_url", "")).strip()
     hero_image_html = ""
+
     if hero_image_url:
         safe_url = escape(hero_image_url, quote=True)
         safe_alt = escape(headline)
         hero_image_html = (
             f'<img src="{safe_url}" alt="{safe_alt}" '
-            'style="display:block;width:100%;max-width:920px;height:auto;border-radius:12px;margin-top:14px;">'
+            'style="display:block;width:100%;max-width:920px;height:auto;'
+            'border-radius:12px;margin-top:14px;">'
         )
 
     return {
@@ -233,7 +268,7 @@ def build_blog_context(bundle: dict) -> dict:
         "offer_label": offer_label,
         "influencer_name": influencer_name,
         "influencer_angle": influencer_angle,
-        "video_intro": "Real install. Real test. Real feedback.",
+        "video_intro": theme_copy["video_intro"],
         "video_embed_or_placeholder": build_video_block(video),
         "parts_list": build_parts_list_markdown(parts),
         "parts_list_html": build_parts_list_html(parts),
@@ -373,7 +408,6 @@ def write_output(bundle: dict) -> None:
 
     meta = build_meta(context)
     internal_links = build_internal_links(bundle)
-
     blog_post_html = markdown_to_html(blog_post_md, meta)
 
     (bundle_output_dir / "blog-post.md").write_text(blog_post_md, encoding="utf-8")
