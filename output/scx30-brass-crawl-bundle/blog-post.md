@@ -11,11 +11,9 @@ More planted. More precise. Built for better crawling control.
 - **Rewards:** Pit Pass Cash eligible
 - **Theme:** Crawler
 
-## Video Proof
-
-Real setup. Real crawl feel. Real feedback.
-
-<div class="video-placeholder">Video embed goes here</div>
+<!-- ## Video Proof -->
+<!-- Real setup. Real crawl feel. Real feedback. -->
+<!-- <div class="video-placeholder">Video embed goes here</div> -->
 
 ## What’s in the Bundle
 
@@ -33,22 +31,6 @@ Crawling is about control. This bundle adds weight and stiffness where it matter
 - Helps the rig stay settled on technical lines
 - Built for controlled crawling, not random upgrades
 
-## Real Content, Not Just Catalog Copy
-
-We’re pairing this build with content from **Hobby Etc** focused on:
-
-**real-world crawl performance and setup improvements**
-
-That means installs, testing, and honest impressions instead of polished nonsense.
-
-## Find the Right Parts
-
-Start with your vehicle and we’ll help you find what actually fits.
-
-- [Use the parts finder](https://store.hobbyetc.com/vehicles)
-
 ## Next Steps
 
-- [Shop the full bundle](https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle)
-- [Explore the individual parts](https://store.hobbyetc.com/parts)
-- [Use the parts finder to see what fits your vehicle](https://store.hobbyetc.com/vehicles)
+- [Add to Cart](https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle)

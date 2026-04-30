@@ -11,11 +11,9 @@
 - **Rewards:** {{ offer_label }}
 - **Theme:** {{ theme }}
 
-## Video Proof
-
-{{ video_intro }}
-
-{{ video_embed_or_placeholder }}
+<!-- ## Video Proof -->
+<!-- {{ video_intro }} -->
+<!-- {{ video_embed_or_placeholder }} -->
 
 ## What’s in the Bundle
 
@@ -30,22 +28,6 @@
 - {{ benefit_3 }}
 - {{ benefit_4 }}
 
-## Real Content, Not Just Catalog Copy
-
-We’re pairing this build with content from **{{ influencer_name }}** focused on:
-
-**{{ influencer_angle }}**
-
-{{ creator_supporting_copy }}
-
-## Find the Right Parts
-
-{{ parts_finder_intro }}
-
-- [Use the parts finder]({{ parts_finder_url }})
-
 ## Next Steps
 
-- [Shop the full bundle]({{ bundle_url }})
-- [Explore the individual parts]({{ parts_page_url }})
-- [Use the parts finder to see what fits your vehicle]({{ parts_finder_url }})
+- [Add to Cart]({{ bundle_url }})

@@ -113,7 +113,6 @@ def build_parts_list_html(parts: list[dict]) -> str:
         for part in parts:
             name = part.get("name", "Unnamed Part")
             role = part.get("role", "").strip()
-            url = part.get("url", "").strip() or "#"
             image_urls = part.get("image_urls", [])
             image = ""
 
@@ -125,8 +124,21 @@ def build_parts_list_html(parts: list[dict]) -> str:
 
             safe_name = escape(name)
             safe_role = escape(role.capitalize()) if role else ""
-            safe_url = escape(url, quote=True)
             safe_image = escape(image, quote=True)
+            role_text = role.capitalize() if role else "Upgrade part"
+            safe_role_text = escape(role_text)
+
+            why_by_role = {
+                "durability": "Helps this build handle repeated hits and rough sessions.",
+                "protection": "Adds a buffer where rigs usually take damage first.",
+                "steering": "Keeps steering response more predictable when lines get technical.",
+                "handling": "Helps the vehicle stay more settled and controllable.",
+                "weight": "Puts weight where it helps with balance and planted feel.",
+                "driveline": "Supports smoother power transfer and less slop over time.",
+                "suspension": "Keeps suspension movement more consistent run after run.",
+            }
+            why_text = why_by_role.get(role.lower(), "Helps this part of the build stay consistent in real use.")
+            safe_why_text = escape(why_text)
 
             if safe_image:
                 image_html = (
@@ -137,14 +149,19 @@ def build_parts_list_html(parts: list[dict]) -> str:
 
             card = f"""
 <div class="part-card">
-  {image_html}
-  <div class="part-card-body">
-    <h3 class="part-card-title">
-      <a href="{safe_url}">{safe_name}</a>
-    </h3>
-    <p class="part-card-role">{safe_role}</p>
-    <a class="part-card-link" href="{safe_url}">View part →</a>
-  </div>
+  <details class="part-card-details">
+    <summary class="part-card-summary">
+      {image_html}
+      <div class="part-card-body">
+        <h3 class="part-card-title">{safe_name}</h3>
+        <p class="part-card-role">{safe_role_text}</p>
+      </div>
+    </summary>
+    <div class="part-card-expanded">
+      <p><strong>Why it matters:</strong> {safe_why_text}</p>
+      <p class="part-card-included-note">Included in this bundle.</p>
+    </div>
+  </details>
 </div>
 """
             cards.append(card.strip())

@@ -273,18 +273,29 @@
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+}
+
+.part-card-details {
+  display: block;
+}
+
+.part-card-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.part-card-summary::-webkit-details-marker {
+  display: none;
 }
 
 .part-card-image {
   width: 100%;
   height: 150px;
   object-fit: contain;
-  background: #f6f8ff;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #edf1fb;
   border-bottom: 1px solid var(--he-border);
-  padding: 10px;
+  padding: 14px;
 }
 
 .part-card-body {
@@ -307,10 +318,36 @@
   font-size: 14px;
 }
 
-.part-card-link {
-  margin-top: auto;
-  font-weight: 700;
+.part-card-expanded {
+  padding: 0 12px 12px;
   font-size: 14px;
+}
+
+.part-card-expanded p {
+  margin: 0 0 8px;
+}
+
+.part-card-included-note {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 8px;
+  border-radius: 999px;
+  border: 1px solid #d5dcef;
+  color: var(--he-muted);
+  font-size: 12px;
+}
+
+.part-card-summary::after {
+  content: "Expand";
+  display: inline-block;
+  margin: 0 12px 12px;
+  color: var(--he-blue);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.part-card-details[open] .part-card-summary::after {
+  content: "Collapse";
 }
     .content-parts-finder-cta {
       background: linear-gradient(180deg, #fff 0%, #f7f9ff 100%);
@@ -440,7 +477,7 @@
   <p class="content-value-prop"><strong>Built to improve balance, control, and confidence on the crawl.</strong></p>
   
   <div class="content-hero-cta">
-    <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Shop the full bundle</a>
+    <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Add to Cart</a>
   </div>
 </section>
 
@@ -451,54 +488,74 @@
   <div><strong>Theme:</strong> Crawler</div>
 </section>
 
-<section class="content-video">
+<!-- <section class="content-video">
   <h2>Video Proof</h2>
   <p>Real setup. Real crawl feel. Real feedback.</p>
   <div class="video-placeholder">Video embed goes here</div>
-</section>
+</section> -->
 
 <section class="content-parts">
   <h2>What’s in the Bundle</h2>
   <div class="parts-card-grid">
 <div class="part-card">
-  <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hpoz.jpg?_a=BAMAOGGo0" alt="Brass Front Steering Block SCX30">
-  <div class="part-card-body">
-    <h3 class="part-card-title">
-      <a href="https://store.hobbyetc.com/parts/view/190378">Brass Front Steering Block SCX30</a>
-    </h3>
-    <p class="part-card-role">Front-end weight</p>
-    <a class="part-card-link" href="https://store.hobbyetc.com/parts/view/190378">View part →</a>
-  </div>
+  <details class="part-card-details">
+    <summary class="part-card-summary">
+      <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty21hpoz.jpg?_a=BAMAOGGo0" alt="Brass Front Steering Block SCX30">
+      <div class="part-card-body">
+        <h3 class="part-card-title">Brass Front Steering Block SCX30</h3>
+        <p class="part-card-role">Front-end weight</p>
+      </div>
+    </summary>
+    <div class="part-card-expanded">
+      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p class="part-card-included-note">Included in this bundle.</p>
+    </div>
+  </details>
 </div>
 <div class="part-card">
-  <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoe.jpg?_a=BAMAOGGo0" alt="Brass TT Steering Fix Links SCX30">
-  <div class="part-card-body">
-    <h3 class="part-card-title">
-      <a href="https://store.hobbyetc.com/parts/view/190393">Brass TT Steering Fix Links SCX30</a>
-    </h3>
-    <p class="part-card-role">Steering precision</p>
-    <a class="part-card-link" href="https://store.hobbyetc.com/parts/view/190393">View part →</a>
-  </div>
+  <details class="part-card-details">
+    <summary class="part-card-summary">
+      <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty49hjhvzoe.jpg?_a=BAMAOGGo0" alt="Brass TT Steering Fix Links SCX30">
+      <div class="part-card-body">
+        <h3 class="part-card-title">Brass TT Steering Fix Links SCX30</h3>
+        <p class="part-card-role">Steering precision</p>
+      </div>
+    </summary>
+    <div class="part-card-expanded">
+      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p class="part-card-included-note">Included in this bundle.</p>
+    </div>
+  </details>
 </div>
 <div class="part-card">
-  <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty155hkqq.jpg?_a=BAMAOGGo0" alt="3.3g Brass Wheel Weights SCX30">
-  <div class="part-card-body">
-    <h3 class="part-card-title">
-      <a href="https://store.hobbyetc.com/parts/view/190399">3.3g Brass Wheel Weights SCX30</a>
-    </h3>
-    <p class="part-card-role">Low-down weight</p>
-    <a class="part-card-link" href="https://store.hobbyetc.com/parts/view/190399">View part →</a>
-  </div>
+  <details class="part-card-details">
+    <summary class="part-card-summary">
+      <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty155hkqq.jpg?_a=BAMAOGGo0" alt="3.3g Brass Wheel Weights SCX30">
+      <div class="part-card-body">
+        <h3 class="part-card-title">3.3g Brass Wheel Weights SCX30</h3>
+        <p class="part-card-role">Low-down weight</p>
+      </div>
+    </summary>
+    <div class="part-card-expanded">
+      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p class="part-card-included-note">Included in this bundle.</p>
+    </div>
+  </details>
 </div>
 <div class="part-card">
-  <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hgkb.jpg?_a=BAMAOGGo0" alt="No Flex Brass Link Set SCX30">
-  <div class="part-card-body">
-    <h3 class="part-card-title">
-      <a href="https://store.hobbyetc.com/parts/view/190402">No Flex Brass Link Set SCX30</a>
-    </h3>
-    <p class="part-card-role">Chassis stability</p>
-    <a class="part-card-link" href="https://store.hobbyetc.com/parts/view/190402">View part →</a>
-  </div>
+  <details class="part-card-details">
+    <summary class="part-card-summary">
+      <img class="part-card-image" src="https://res.cloudinary.com/hobbyshop/image/upload/e_trim/c_pad,h_640,q_auto,w_800/v1/s/sxty133hgkb.jpg?_a=BAMAOGGo0" alt="No Flex Brass Link Set SCX30">
+      <div class="part-card-body">
+        <h3 class="part-card-title">No Flex Brass Link Set SCX30</h3>
+        <p class="part-card-role">Chassis stability</p>
+      </div>
+    </summary>
+    <div class="part-card-expanded">
+      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p class="part-card-included-note">Included in this bundle.</p>
+    </div>
+  </details>
 </div>
 </div>
 </section>
@@ -514,23 +571,23 @@
   </ul>
 </section>
 
-<section class="content-creator-angle">
+<!-- <section class="content-creator-angle">
   <h2>Real Content, Not Just Catalog Copy</h2>
   <p>We’re pairing this build with content from <strong>Hobby Etc</strong> focused on <strong>real-world crawl performance and setup improvements</strong>.</p>
   <p>That means installs, testing, and honest impressions instead of polished nonsense.</p>
-</section>
+</section> -->
 
-<section class="content-parts-finder-cta">
+<!-- <section class="content-parts-finder-cta">
   <h2>Find the Right Parts</h2>
   <p>Start with your vehicle and we’ll help you find what actually fits.</p>
   <a href="https://store.hobbyetc.com/vehicles">Use the parts finder</a>
-</section>
+</section> -->
 
-<section class="content-final-cta">
+<!-- <section class="content-final-cta">
   <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Shop the full bundle</a>
   <a href="https://store.hobbyetc.com/parts">Explore the individual parts</a>
   <a href="https://store.hobbyetc.com/vehicles">See what fits your vehicle</a>
-</section>
+</section> -->
 
     </main>
   </div>
