@@ -166,7 +166,6 @@ def build_parts_list_html(parts: list[dict]) -> str:
     </summary>
     <div class="part-card-expanded">
       {expanded_content}
-      <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
 </div>
