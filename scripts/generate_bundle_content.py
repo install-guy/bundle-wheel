@@ -134,12 +134,18 @@ def build_parts_list_html(parts: list[dict]) -> str:
             safe_image = escape(image, quote=True)
             role_text = role.capitalize() if role else "Upgrade part"
             safe_role_text = escape(role_text)
+            description_html = str(part.get("description_html", "")).strip()
 
             why_text = WHY_IT_MATTERS_BY_ROLE.get(
                 role.lower(),
                 "Improves real-world performance where this part matters most.",
             )
             safe_why_text = escape(why_text)
+            expanded_content = (
+                f'<div class="part-description">{description_html}</div>'
+                if description_html
+                else f"<p><strong>Why it matters:</strong> {safe_why_text}</p>"
+            )
 
             if safe_image:
                 image_html = (
@@ -159,7 +165,7 @@ def build_parts_list_html(parts: list[dict]) -> str:
       </div>
     </summary>
     <div class="part-card-expanded">
-      <p><strong>Why it matters:</strong> {safe_why_text}</p>
+      {expanded_content}
       <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
