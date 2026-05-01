@@ -99,12 +99,9 @@
 
     .content-hero,
     .content-utility-bar,
-    .content-video,
     .content-parts,
-    .content-why,
-    .content-creator-angle,
-    .content-parts-finder-cta,
-    .content-final-cta {
+    .bundle-cta-secondary,
+    .content-why {
       background: var(--he-card);
       border: 1px solid var(--he-border);
       border-radius: var(--he-radius);
@@ -146,8 +143,7 @@
     }
 
     .content-hero-cta a,
-    .content-parts-finder-cta a,
-    .content-final-cta a {
+    .bundle-cta-secondary a {
       display: inline-block;
       padding: 12px 18px;
       border-radius: 10px;
@@ -163,6 +159,15 @@
     .content-hero-cta a:hover {
       text-decoration: none;
       transform: translateY(-1px);
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 920px;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 14px;
     }
 
     .content-utility-bar {
@@ -182,11 +187,9 @@
       border-right: none;
     }
 
-    .content-video,
     .content-parts,
     .content-why,
-    .content-creator-angle,
-    .content-parts-finder-cta {
+    .bundle-cta-secondary {
       padding: 24px 24px 22px;
     }
 
@@ -420,43 +423,14 @@ body.theme-crawler .content-why {
 .part-card-details[open] .part-card-summary::after {
   content: "Collapse";
 }
-    .content-parts-finder-cta {
-      background: linear-gradient(180deg, #fff 0%, #f7f9ff 100%);
+
+    .bundle-cta-secondary {
+      text-align: center;
     }
 
-    .content-parts-finder-cta a {
-      background: var(--he-blue);
-      color: #fff;
-      margin-top: 6px;
-    }
-
-    .content-parts-finder-cta a:hover {
-      text-decoration: none;
-    }
-
-    .content-final-cta {
-      padding: 20px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .content-final-cta a {
-      background: #eef2ff;
-      color: var(--he-blue);
-      border: 1px solid #ccd6fb;
-    }
-
-    .content-final-cta a:first-child {
+    .bundle-cta-secondary a {
       background: var(--he-orange);
-      border-color: var(--he-orange);
       color: #fff;
-    }
-
-    .content-final-cta a:hover {
-      text-decoration: none;
     }
 
     .site-footer {
@@ -517,12 +491,9 @@ body.theme-crawler .content-why {
         font-size: 28px;
       }
 
-      .content-video,
       .content-parts,
       .content-why,
-      .content-creator-angle,
-      .content-parts-finder-cta,
-      .content-final-cta {
+      .bundle-cta-secondary {
         padding-left: 18px;
         padding-right: 18px;
       }

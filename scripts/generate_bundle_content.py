@@ -13,7 +13,7 @@ BASE_URL = "https://store.hobbyetc.com"
 
 THEME_COPY = {
     "crawler": {
-        "value_prop": "Built for brass-backed control, cleaner steering feel, and better crawl stability.",
+        "value_prop": "More control. Cleaner steering. Built to stay planted where it matters.",
         "video_intro": "Real setup. Real crawl feel. Real feedback.",
         "why_intro": "Crawling is about control and feel. This setup keeps weight low, steering consistent, and lines more predictable.",
         "benefits": [
@@ -36,6 +36,16 @@ THEME_COPY = {
             "Built for bashing and going back for more",
         ],
     },
+}
+
+WHY_IT_MATTERS_BY_ROLE = {
+    "front-end weight": "Adds weight where it counts to improve front-end bite and climbing control.",
+    "steering precision": "Tightens steering response and keeps the front end predictable under load.",
+    "low-down weight": "Keeps the center of gravity low for better stability on technical lines.",
+    "chassis stability": "Reduces flex so the rig stays consistent across uneven terrain.",
+    "durability": "Helps absorb impacts and protect key components during hard use.",
+    "handling": "Improves overall balance and responsiveness during aggressive driving.",
+    "drivetrain strength": "Strengthens high-stress drivetrain components to reduce failure under load.",
 }
 
 
@@ -125,16 +135,10 @@ def build_parts_list_html(parts: list[dict]) -> str:
             role_text = role.capitalize() if role else "Upgrade part"
             safe_role_text = escape(role_text)
 
-            why_by_role = {
-                "durability": "Helps this build handle repeated hits and rough sessions.",
-                "protection": "Adds a buffer where rigs usually take damage first.",
-                "steering": "Keeps steering response more predictable when lines get technical.",
-                "handling": "Helps the vehicle stay more settled and controllable.",
-                "weight": "Puts weight where it helps with balance and planted feel.",
-                "driveline": "Supports smoother power transfer and less slop over time.",
-                "suspension": "Keeps suspension movement more consistent run after run.",
-            }
-            why_text = why_by_role.get(role.lower(), "Helps this part of the build stay consistent in real use.")
+            why_text = WHY_IT_MATTERS_BY_ROLE.get(
+                role.lower(),
+                "Improves real-world performance where this part matters most.",
+            )
             safe_why_text = escape(why_text)
 
             if safe_image:
@@ -267,11 +271,7 @@ def build_blog_context(bundle: dict) -> dict:
     if hero_image_url:
         safe_url = escape(hero_image_url, quote=True)
         safe_alt = escape(headline)
-        hero_image_html = (
-            f'<img src="{safe_url}" alt="{safe_alt}" '
-            'style="display:block;width:100%;max-width:920px;height:auto;'
-            'border-radius:12px;margin-top:14px;">'
-        )
+        hero_image_html = f'<img class="hero-image" src="{safe_url}" alt="{safe_alt}">'
 
     return {
         "headline": headline,

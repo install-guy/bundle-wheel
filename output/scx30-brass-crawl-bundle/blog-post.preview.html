@@ -99,12 +99,9 @@
 
     .content-hero,
     .content-utility-bar,
-    .content-video,
     .content-parts,
-    .content-why,
-    .content-creator-angle,
-    .content-parts-finder-cta,
-    .content-final-cta {
+    .bundle-cta-secondary,
+    .content-why {
       background: var(--he-card);
       border: 1px solid var(--he-border);
       border-radius: var(--he-radius);
@@ -146,8 +143,7 @@
     }
 
     .content-hero-cta a,
-    .content-parts-finder-cta a,
-    .content-final-cta a {
+    .bundle-cta-secondary a {
       display: inline-block;
       padding: 12px 18px;
       border-radius: 10px;
@@ -163,6 +159,15 @@
     .content-hero-cta a:hover {
       text-decoration: none;
       transform: translateY(-1px);
+    }
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      max-width: 920px;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 14px;
     }
 
     .content-utility-bar {
@@ -182,11 +187,9 @@
       border-right: none;
     }
 
-    .content-video,
     .content-parts,
     .content-why,
-    .content-creator-angle,
-    .content-parts-finder-cta {
+    .bundle-cta-secondary {
       padding: 24px 24px 22px;
     }
 
@@ -420,43 +423,14 @@ body.theme-crawler .content-why {
 .part-card-details[open] .part-card-summary::after {
   content: "Collapse";
 }
-    .content-parts-finder-cta {
-      background: linear-gradient(180deg, #fff 0%, #f7f9ff 100%);
+
+    .bundle-cta-secondary {
+      text-align: center;
     }
 
-    .content-parts-finder-cta a {
-      background: var(--he-blue);
-      color: #fff;
-      margin-top: 6px;
-    }
-
-    .content-parts-finder-cta a:hover {
-      text-decoration: none;
-    }
-
-    .content-final-cta {
-      padding: 20px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .content-final-cta a {
-      background: #eef2ff;
-      color: var(--he-blue);
-      border: 1px solid #ccd6fb;
-    }
-
-    .content-final-cta a:first-child {
+    .bundle-cta-secondary a {
       background: var(--he-orange);
-      border-color: var(--he-orange);
       color: #fff;
-    }
-
-    .content-final-cta a:hover {
-      text-decoration: none;
     }
 
     .site-footer {
@@ -517,12 +491,9 @@ body.theme-crawler .content-why {
         font-size: 28px;
       }
 
-      .content-video,
       .content-parts,
       .content-why,
-      .content-creator-angle,
-      .content-parts-finder-cta,
-      .content-final-cta {
+      .bundle-cta-secondary {
         padding-left: 18px;
         padding-right: 18px;
       }
@@ -545,11 +516,11 @@ body.theme-crawler .content-why {
       <section class="content-hero">
   <h1>SCX30 Brass Crawl Bundle</h1>
   <p class="content-subhead">More planted. More precise. Built for better crawling control.</p>
-  <p class="content-value-prop"><strong>Built for brass-backed control, cleaner steering feel, and better crawl stability.</strong></p>
-  
+  <p class="content-value-prop"><strong>More control. Cleaner steering. Built to stay planted where it matters.</strong></p>
   <div class="content-hero-cta">
     <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Add to Cart</a>
   </div>
+  
 </section>
 
 <section class="content-utility-bar">
@@ -558,12 +529,6 @@ body.theme-crawler .content-why {
   <div><strong>Rewards:</strong> Pit Pass Cash eligible</div>
   <div><strong>Theme:</strong> Crawler</div>
 </section>
-
-<!-- <section class="content-video">
-  <h2>Video Proof</h2>
-  <p>Real setup. Real crawl feel. Real feedback.</p>
-  <div class="video-placeholder">Video embed goes here</div>
-</section> -->
 
 <section class="content-parts">
   <h2>What’s in the Bundle</h2>
@@ -578,7 +543,7 @@ body.theme-crawler .content-why {
       </div>
     </summary>
     <div class="part-card-expanded">
-      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p><strong>Why it matters:</strong> Adds weight where it counts to improve front-end bite and climbing control.</p>
       <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
@@ -593,7 +558,7 @@ body.theme-crawler .content-why {
       </div>
     </summary>
     <div class="part-card-expanded">
-      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p><strong>Why it matters:</strong> Tightens steering response and keeps the front end predictable under load.</p>
       <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
@@ -608,7 +573,7 @@ body.theme-crawler .content-why {
       </div>
     </summary>
     <div class="part-card-expanded">
-      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p><strong>Why it matters:</strong> Keeps the center of gravity low for better stability on technical lines.</p>
       <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
@@ -623,12 +588,16 @@ body.theme-crawler .content-why {
       </div>
     </summary>
     <div class="part-card-expanded">
-      <p><strong>Why it matters:</strong> Helps this part of the build stay consistent in real use.</p>
+      <p><strong>Why it matters:</strong> Reduces flex so the rig stays consistent across uneven terrain.</p>
       <p class="part-card-included-note">Included in this bundle.</p>
     </div>
   </details>
 </div>
 </div>
+</section>
+
+<section class="bundle-cta-secondary">
+  <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Add to Cart</a>
 </section>
 
 <section class="content-why">
@@ -653,24 +622,6 @@ body.theme-crawler .content-why {
     </article>
   </div>
 </section>
-
-<!-- <section class="content-creator-angle">
-  <h2>Real Content, Not Just Catalog Copy</h2>
-  <p>We’re pairing this build with content from <strong>Hobby Etc</strong> focused on <strong>real-world crawl performance and setup improvements</strong>.</p>
-  <p>That means installs, testing, and honest impressions instead of polished nonsense.</p>
-</section> -->
-
-<!-- <section class="content-parts-finder-cta">
-  <h2>Find the Right Parts</h2>
-  <p>Start with your vehicle and we’ll help you find what actually fits.</p>
-  <a href="https://store.hobbyetc.com/vehicles">Use the parts finder</a>
-</section> -->
-
-<!-- <section class="content-final-cta">
-  <a href="https://store.hobbyetc.com/bundles/scx30-brass-crawl-bundle">Shop the full bundle</a>
-  <a href="https://store.hobbyetc.com/parts">Explore the individual parts</a>
-  <a href="https://store.hobbyetc.com/vehicles">See what fits your vehicle</a>
-</section> -->
 
     </main>
   </div>
