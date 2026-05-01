@@ -2,7 +2,7 @@
 
 More planted. More precise. Built for better crawling control.
 
-**Built for brass-backed control, cleaner steering feel, and better crawl stability.**
+**More control. Cleaner steering. Built to stay planted where it matters.**
 
 ## Quick Look
 
