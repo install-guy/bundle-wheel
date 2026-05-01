@@ -270,7 +270,7 @@ def build_blog_context(bundle: dict) -> dict:
 
     if hero_image_url:
         safe_url = escape(hero_image_url, quote=True)
-        safe_alt = escape(headline)
+        safe_alt = escape(bundle_name)
         hero_image_html = f'<img class="hero-image" src="{safe_url}" alt="{safe_alt}">'
 
     return {
